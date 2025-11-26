@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Quiz App</title>
+</head>
+<body>
+<!-- Info Box -->
+<div class="info_box"> 
+                                                                          <!-- Adding Textbook logo -->
+        <img src="logo.png"alt="logo-img" id="logo-1"/>
+        <h1>Hello User!</h1>
+        <h3>Enter your name to continue the Quiz.</h3>
+                                                                          <!-- getting uers name input -->
+        <input placeholder="Enter Your Name..."autocomplete="off"type="text"class="username-input"value=""name=""id="inputget">
+        <button class="user-btn">Enter</button>
+        <hr>
+        <h1>Select Category</h1>                                          <!--category options are given for user -->
+<div class="category-box" id="category-select">
+                                                                          <!-- these are the categorys given -->
+  <button class="category-btn" id="btn1">Pipes and Cisterns</button>
+  <button class="category-btn" id="btn2">Probability</button>
+  <button class="category-btn" id="btn3">Problems on Age</button>
+  <button class="category-btn" id="btn4">Profit and Loss</button>
+</div>
+     </div>
+<!-- Quiz Box -->
+<div class="quiz_box" id="quizbox" >
+                                                       <!-- title of category........which is changed in js as catagory chosen -->
+    <div id="title">title</div>
+        <div id="timer"> Time Left : <span></span></div>                 <!--time of the quiz displayed here -->
+        <div id="score">score : <span></span></div>                      <!--score of quiz displayed here  -->
+        <!-- // pipes and cisterns questions  -->
+  <section class="questions">
+    <div class="quesno"></div>                     <!-- question number will be displayed here -->
+    <div class="que_text"></div>                   <!--questions are displayed here -->
+    <div class="optionbox">                        <!--options are displayed here -->
+       <!-- four options for questions  -->
+     <span  onclick="check(this)" data-opt="1"></span>         
+     <span  onclick="check(this)" data-opt="2"></span>
+     <span  onclick="check(this)" data-opt="3"></span>
+     <span  onclick="check(this)" data-opt="4"></span>
+    </div>
+  </section>
+    <button class="next_btn" onclick="showNext()" id="nextbtn" >Next Question</button>  <!--next question button for pipes and cisterns questions  -->
+        <!-- // pipes and cisterns questions ends  -->
+        <!-- // probability questions starts  -->
+ <section class="questions">
+      <div class="probque_text"></div>              <!--probability questions are displayed here -->
+    <div class= "proboptionbox">                    <!--probability options are displayed here -->
+     <span  onclick="checked(this)" data-oopt="1"></span>
+     <span  onclick="checked(this)" data-oopt="2"></span>
+     <span  onclick="checked(this)" data-oopt="3"></span>
+     <span  onclick="checked(this)" data-oopt="4"></span>
+    </div>
+    </section>
+    <button class="net_btn" onclick="NextQ()">Next Question</button>       <!--next question button for probability questions  -->
+                                                      <!-- // pipes and cisterns questions ends  -->
+                                                      <!-- // probability questions starts  -->
+
+    <section class="questions">
+      <div class="ageque_text"></div>               <!--age questions are displayed here -->
+    <div class= "ageoptionbox">                     <!--age options are displayed here -->
+     <span  onclick="picked(this)" data-pt="1"></span>
+     <span  onclick="picked(this)" data-pt="2"></span>
+     <span  onclick="picked(this)" data-pt="3"></span>
+     <span  onclick="picked(this)" data-pt="4"></span>
+    </div>
+    </section>
+    <button class="nt_btn" onclick="NExtQ()">Next Question</button>       <!--next question button for age questions  -->
+                                                      <!-- // probability questions ends --> 
+                                                      <!-- // Profit and Loss questions ends -->  
+     <section class="questions">
+     <div class="plque_text"></div>                  <!--profit and Loss questions are displayed here -->
+    <div class= "ploptionbox">                        <!--profit and Loss options are displayed here -->
+     <span  onclick="pick(this)" data-p="1"></span>
+     <span  onclick="pick(this)" data-p="2"></span>
+     <span  onclick="pick(this)" data-p="3"></span>
+     <span  onclick="pick(this)" data-p="4"></span>
+    </div>
+    </section>
+    <button class="n_btn" onclick="NEXtQ()">Next Question</button>           <!--next question button for profit and Loss questions  -->                                         
+</div>
+
+
+
+<!-- Result Box -->
+<div class="result_box">
+  <h1 class="resulttitle">Quiz Result</h1>
+  <hr>
+  <h3>Here is your Result <span id="show"> <!--getting users name to display here  -->  </span> :</h3>
+  <hr>
+  <div class="result_info">
+   <label class="text">Total questions :</label>        <!-- total questions -->
+   <span id="totalQuestions">10</span>
+   <label class="text">Attempt : </label>              <!-- total questions attempted -->
+   <span id="attemptQuestion"></span>
+   <label class="text">Correct :</label>              <!--correct answers answered -->
+   <span id="correctAnswers"></span>
+   <label class="text">Wrong :</label>                <!--wrong answers answered -->
+   <span id="wrongAnswers"></span>
+   <label class="text">Total Percentage :</label>      <!--total percentage displayed  -->
+   <span id="percentage" ></span>
+  </div>
+  <div class="buttons">
+    <button class="gohome" onclick="refreshpage()">Go To Home</button>       <!-- Return to info box button -->
+  </div>
+
+  <!-- result box ends here -->
+  <script src="jquery-3.7.0.min.js"></script>
+ 
+<script src="index.js"></script>
+</body>
+</html>

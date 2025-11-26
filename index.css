@@ -1,0 +1,317 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  max-width: 50rem;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 1rem;
+  border-radius: 50%;
+}
+
+.info_box {
+  height: 40rem;
+  width: 40rem;
+  border: 2px solid gray;
+  box-shadow: 1px 1px gray;
+  text-align: center;
+  margin-left: 28rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+hr {
+  margin: 1rem;
+}
+
+h1 {
+  color: aqua;
+}
+.username-input {
+  width: 30rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.user-btn {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.user-btn:hover {
+  background-color: aqua;
+  color: red;
+}
+
+.category-btn {
+  height: 4rem;
+  width: 16rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-radius: 1rem;
+  background-color: skyblue;
+  font-size: 1.1rem;
+}
+.category-btn:hover {
+  background-color: brown;
+}
+
+.quiz_box {
+  display: none;
+  height: 40rem;
+  width: 40rem;
+  border: 1px solid gray;
+  box-shadow: 1px 1px gray;
+  text-align: center;
+  margin-left: 28rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+#title {
+  margin-top: 2rem;
+  font-size: large;
+  margin-bottom: 3rem;
+}
+#timer {
+  display: inline;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: 1px solid #444;
+  color: #444;
+}
+#score {
+  display: inline;
+  margin-left: 18rem;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border: 1px solid #444;
+  color: #444;
+}
+
+.quesno {
+  position: absolute;
+  font-size: large;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  border: 3px solid blue;
+  left: 50%;
+  top: 10rem;
+  margin-left: -25px;
+  background: white;
+  font-weight: bolder;
+}
+.que_text {
+  display: none;
+  height: 8rem;
+  width: 35.5rem;
+  border: 1px solid rgb(41, 12, 0);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding-top: 2rem;
+}
+.optionbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+  display: none;
+}
+.optionbox span {
+  background-color: #fff;
+  border-radius: 2rem;
+  color: black;
+  border: 2px solid blue;
+  padding: 1.5rem 6rem;
+  margin: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.optionbox span.right {
+  background-color: green;
+  border-color: #00ab00;
+  color: white;
+}
+.optionbox span.wrong {
+  background-color: red;
+  border-color: #ff3b0e;
+  color: #fff;
+}
+.probque_text {
+  display: none;
+  height: 8rem;
+  width: 35.5rem;
+  border: 1px solid rgb(41, 12, 0);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding-top: 2rem;
+}
+.proboptionbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+  display: none;
+}
+
+.proboptionbox span {
+  background-color: #fff;
+  border-radius: 2rem;
+  color: black;
+  border: 2px solid blue;
+  padding: 1.5rem 6rem;
+  margin: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.proboptionbox span.right {
+  background-color: green;
+  border-color: #00ab00;
+  color: white;
+}
+.proboptionbox span.wrong {
+  background-color: red;
+  border-color: #ff3b0e;
+  color: #fff;
+}
+.ageque_text {
+  display: none;
+  height: 8rem;
+  width: 35.5rem;
+  border: 1px solid rgb(41, 12, 0);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding-top: 2rem;
+}
+.ageoptionbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+  display: none;
+}
+.ageoptionbox span {
+  background-color: #fff;
+  border-radius: 2rem;
+  color: black;
+  border: 2px solid blue;
+  padding: 1.5rem 6rem;
+  margin: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.ageoptionbox span.right {
+  background-color: green;
+  border-color: #00ab00;
+  color: white;
+}
+.ageoptionbox span.wrong {
+  background-color: red;
+  border-color: #ff3b0e;
+  color: #fff;
+}
+.plque_text {
+  display: none;
+  height: 8rem;
+  width: 35.5rem;
+  border: 1px solid rgb(41, 12, 0);
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding-top: 2rem;
+}
+.ploptionbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+  display: none;
+}
+.ploptionbox span {
+  background-color: #fff;
+  border-radius: 2rem;
+  color: black;
+  border: 2px solid blue;
+  padding: 1.5rem 6rem;
+  margin: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.ploptionbox span.right {
+  background-color: green;
+  border-color: #00ab00;
+  color: white;
+}
+.ploptionbox span.wrong {
+  background-color: red;
+  border-color: #ff3b0e;
+  color: #fff;
+}
+
+.next_btn,
+.net_btn,
+.nt_btn,
+.n_btn {
+  display: none;
+  height: 3rem;
+  width: 13rem;
+  border-radius: 6rem;
+  font-size: 1rem;
+  background-color: skyblue;
+  color: white;
+}
+.net_btn {
+  display: none;
+}
+.nt_btn {
+  display: none;
+}
+.n_btn {
+  display: none;
+}
+.result_box {
+  display: none;
+  height: 40rem;
+  width: 40rem;
+  border: 1px solid gray;
+  box-shadow: 1px 1px gray;
+  text-align: center;
+  margin-left: 28rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.resulttitle {
+  top: 2.5rem;
+  color: aqua;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.result_info {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gohome {
+  height: 4rem;
+  width: 16rem;
+  margin-left: 1rem;
+  margin-top: 6rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-radius: 1rem;
+  background-color: skyblue;
+  font-size: 1.1rem;
+}
+
+.text {
+  font-size: large;
+}
+
+.result_info span {
+  font-weight: 900;
+}
